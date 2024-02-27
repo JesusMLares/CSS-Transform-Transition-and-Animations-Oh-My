@@ -18,6 +18,21 @@
   animation-fill-mode: forwards;
 }
 
+@keyframes top{
+  from{transform:rotate(0)}
+  to{transform: rotate(45deg) translate(25px, 25px);}
+}
+
+@keyframes middle{
+  from{opacity: 100%;}
+  to{opacity: 0%;}
+}
+
+@keyframes bottom{
+  from{transform:rotate(0)}
+  to{transform: rotate(-45deg) translate(22px, -24px);}
+}
+
 nav {
   opacity: 0;
   transition-duration: 1s;
@@ -25,19 +40,4 @@ nav {
 
 .hamburger:hover ~ nav {
   opacity: 1;
-}
-
-@keyframes top {
-  from {}
-  to {}
-}
-
-@keyframes middle {
-  from {}
-  to {}
-}
-
-@keyframes bottom {
-  from {}
-  to {}
 }
